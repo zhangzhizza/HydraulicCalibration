@@ -1,0 +1,2 @@
+nb_hydr_static_v4: manual calibraiton using 2020 first 50 data
+nb_hydr_static_v5: used for automatic calibration for chiller_{n} objects length and v_nominal
