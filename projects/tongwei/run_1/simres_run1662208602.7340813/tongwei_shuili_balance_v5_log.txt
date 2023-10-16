@@ -1,0 +1,560 @@
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        3.3643973972991063E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1578977405957613E-03</value>, <value name="scaledStepLength">        1.6984715488581548E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        3.3643973972991063E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        4.7082248274940682E-10</value>, <value name="scaledStepLength">        1.8360542170065422E-09</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        3.8556635582780963E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1628626861722210E-03</value>, <value name="scaledStepLength">        4.7712743448887140E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        3.8556635582780963E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        6.2115864556697570E-03</value>, <value name="scaledStepLength">        1.4803559454044677E+00</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <Warning category="warning">Evaluating the derivatives failed at <value name="t">        3.8556635582780963E+01</value>, retrying with restored values.</Warning>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        3.8556635582780963E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1628626861722210E-03</value>, <value name="scaledStepLength">        4.7712743448887140E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        3.8556635582780963E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        6.2115864556697570E-03</value>, <value name="scaledStepLength">        1.4803559454044677E+00</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <Error category="error">Evaluating the derivatives failed at <value name="t">        3.8556635582780963E+01</value></Error>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        2.7285982554068613E-04</value>, <value name="scaledStepLength">        1.7287178213509330E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        6.8631908124578270E-02</value>, <value name="scaledStepLength">        2.8153035240896446E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <Warning category="warning">Evaluating the derivatives failed at <value name="t">        4.1130844291549053E+01</value>, retrying with restored values.</Warning>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        2.7285982554068613E-04</value>, <value name="scaledStepLength">        1.7287178213509330E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        6.8631908124578270E-02</value>, <value name="scaledStepLength">        2.8153035240896446E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <Error category="error">Evaluating the derivatives failed at <value name="t">        4.1130844291549053E+01</value></Error>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        4.2958539489486448E-05</value>, <value name="scaledStepLength">        1.6711940432255895E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        7.1392432226294535E-06</value>, <value name="scaledStepLength">        1.6088713829642481E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.4327416903073720E-04</value>, <value name="scaledStepLength">        1.6017684817822324E+00</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        7.0917698134085764E-05</value>, <value name="scaledStepLength">        1.6106290228103198E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.2476624891459490E-05</value>, <value name="scaledStepLength">        1.6557445059962941E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1793524073097129E-05</value>, <value name="scaledStepLength">        1.6141534458403747E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        8.5747211092998486E-05</value>, <value name="scaledStepLength">        1.6603790720517603E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        5.3104661093050737E-05</value>, <value name="scaledStepLength">        1.6179138943959309E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.7751233823313172E-04</value>, <value name="scaledStepLength">        1.7061459835170817E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.3676242374541527E-04</value>, <value name="scaledStepLength">        1.6255864485841187E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        6.6532384842649617E-02</value>, <value name="scaledStepLength">        2.5347802108078316E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <ModelEquationsEvaluationFailed category="error">Error evaluating model equations.</ModelEquationsEvaluationFailed>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.9163061961522266E-04</value>, <value name="scaledStepLength">        1.7799501495926337E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1593178009793969E-04</value>, <value name="scaledStepLength">        1.3318088479050409E+00</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        9.7133476684815257E-05</value>, <value name="scaledStepLength">        1.6190867276552770E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.0788489031495524E-05</value>, <value name="scaledStepLength">        1.6088583678721002E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.5158196191406778E-05</value>, <value name="scaledStepLength">        1.6110038438615326E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.1896583620451776E-05</value>, <value name="scaledStepLength">        1.7435489665812703E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        2.6371104814276432E-04</value>, <value name="scaledStepLength">        1.9309650875364912E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        7.3653494263864901E-06</value>, <value name="scaledStepLength">        1.4579109214742441E-05</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        2.6029984625235337E-04</value>, <value name="scaledStepLength">        2.5906117286919859E+00</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        3.7171545283314616E-05</value>, <value name="scaledStepLength">        1.6668389324529778E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        8.2288939908089424E-05</value>, <value name="scaledStepLength">        6.8597170626965698E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.2314019762175673E-04</value>, <value name="scaledStepLength">        2.3460551190516007E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        2.3332608499334649E-04</value>, <value name="scaledStepLength">        1.6079983321346927E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        2.2905376735177455E-04</value>, <value name="scaledStepLength">        2.1216349689527778E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        2.4697451575078654E-04</value>, <value name="scaledStepLength">        1.6504959046690693E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.9424801700881385E-04</value>, <value name="scaledStepLength">        1.2080765524995268E-03</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.3522825576222585E-05</value>, <value name="scaledStepLength">        9.7476014781620601E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        3.0063748778962480E-04</value>, <value name="scaledStepLength">        1.7146614278854516E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        5.8347084280341878E-06</value>, <value name="scaledStepLength">        8.8038746613460170E-05</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        2.2186276224315144E-05</value>, <value name="scaledStepLength">        1.6078709903507757E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        7.6059371134222080E-05</value>, <value name="scaledStepLength">        1.6997136482848119E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        7.1398079600644710E-06</value>, <value name="scaledStepLength">        4.8178100775890764E-05</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        6.9298595163189036E-05</value>, <value name="scaledStepLength">        1.6978546807783290E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        2.0151509001191753E-04</value>, <value name="scaledStepLength">        1.7104199835595660E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1130844291549053E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        6.5692478150484609E-02</value>, <value name="scaledStepLength">        2.5578165104105804E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <ModelEquationsEvaluationFailed category="error">Error evaluating model equations.</ModelEquationsEvaluationFailed>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.3461971657532843E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.2807817875123029E-03</value>, <value name="scaledStepLength">        4.3487392004467479E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.3461971657532843E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.1590122079886798E-02</value>, <value name="scaledStepLength">        9.3142909455465583E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <Warning category="warning">Evaluating the derivatives failed at <value name="t">        4.3461971657532843E+01</value>, retrying with restored values.</Warning>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.3461971657532843E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.2807817875123029E-03</value>, <value name="scaledStepLength">        4.3487392004467479E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.3461971657532843E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.1590122079886798E-02</value>, <value name="scaledStepLength">        9.3142909455465583E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <Error category="error">Evaluating the derivatives failed at <value name="t">        4.3461971657532843E+01</value></Error>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1950568088821787E-05</value>, <value name="scaledStepLength">        1.6029742662733992E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        9.9457959696502534E-06</value>, <value name="scaledStepLength">        1.6007216200080304E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1697400746264999E-05</value>, <value name="scaledStepLength">        1.6467530756667514E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        7.0859603884927693E-06</value>, <value name="scaledStepLength">        1.3782974081228856E-05</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        9.8999555157997225E-06</value>, <value name="scaledStepLength">        1.6057271495353911E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        7.3720523007498418E-08</value>, <value name="scaledStepLength">        3.5204149683463818E-08</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        9.1052360146141575E-10</value>, <value name="scaledStepLength">        1.1628990465302943E-07</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.0394600933036814E-05</value>, <value name="scaledStepLength">        1.6130828091096258E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.2474143048270594E-05</value>, <value name="scaledStepLength">        1.6504130654010365E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        3.1884833060853633E-08</value>, <value name="scaledStepLength">        1.2111854876127395E-07</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1970799711133548E-05</value>, <value name="scaledStepLength">        1.6163605773299794E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.2170449922763372E-07</value>, <value name="scaledStepLength">        2.2952592525357467E-07</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.1713626133045004E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.1903312966284954E-05</value>, <value name="scaledStepLength">        1.7178211764133330E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.2296407974540955E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        1.9326270757343911E-05</value>, <value name="scaledStepLength">        1.5982681082834149E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.2879189816036906E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        2.9365602039229498E-05</value>, <value name="scaledStepLength">        1.7199320291265754E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.2879189816036906E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        2.7045176655422247E-05</value>, <value name="scaledStepLength">        1.9921066929639783E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.3783680824450023E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.4878750440062019E-01</value>, <value name="scaledStepLength">        1.9187987667681615E-02</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.3783680824450023E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.4877625730709179E-01</value>, <value name="scaledStepLength">        1.8927584541767611E-02</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4688171832863141E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.0492511471080349E-03</value>, <value name="scaledStepLength">        1.5656456278521480E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4688171832863141E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.3180834859257719E-02</value>, <value name="scaledStepLength">        7.5086382242661909E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <Warning category="warning">Evaluating the derivatives failed at <value name="t">        4.4688171832863141E+01</value>, retrying with restored values.</Warning>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4688171832863141E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.0492511471080349E-03</value>, <value name="scaledStepLength">        1.5656456278521480E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4688171832863141E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.3180834859257719E-02</value>, <value name="scaledStepLength">        7.5086382242661909E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <Error category="error">Evaluating the derivatives failed at <value name="t">        4.4688171832863141E+01</value></Error>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4742641220161381E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.0395008927798367E-03</value>, <value name="scaledStepLength">        1.5421978769154684E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4742641220161381E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.9822207836594423E-04</value>, <value name="scaledStepLength">        1.8950975275649362E-04</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <Warning category="warning">Evaluating the derivatives failed at <value name="t">        4.4742641220161381E+01</value>, retrying with restored values.</Warning>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4742641220161381E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.0395008927798367E-03</value>, <value name="scaledStepLength">        1.5421978769154684E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4742641220161381E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.9822207836594423E-04</value>, <value name="scaledStepLength">        1.8950975275649362E-04</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <Error category="error">Evaluating the derivatives failed at <value name="t">        4.4742641220161381E+01</value></Error>
+FMIL: module = Model, log level = 3: [INFO][FMU status:Warning]   <KinsolError category="warning">
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.4903701749415056E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="msg">"The maximum number of iterations was reached before convergence."</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]     <value name="functionL2Norm">        5.7719108270221199E-05</value>, <value name="scaledStepLength">        1.5315881967431957E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.6051109374292693E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.4236842557428553E-01</value>, <value name="scaledStepLength">        2.2388924061511654E-02</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.6051109374292693E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.4235011562515146E-01</value>, <value name="scaledStepLength">        2.1814272306351839E-02</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.6051109374292693E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.4222015857339804E-01</value>, <value name="scaledStepLength">        4.9797937597173364E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.6051109374292693E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.7946555438167890E-02</value>, <value name="scaledStepLength">        2.0035529041164364E+00</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning] <Warning category="warning">Evaluating the derivatives failed while evaluating the event indicators at <value name="t">        4.6051109374292693E+01</value>, retrying with restored values.</Warning>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.6051109374292693E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.4222015857339804E-01</value>, <value name="scaledStepLength">        4.9797937597173364E-01</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 3: [WARNING][FMU status:Warning]   <NonConverge category="warning">The equations with initial scaling didn't converge to a solution in <value name="block">"1"</value></NonConverge>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        4.6051109374292693E+01</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to to satisfy the beta-condition for 11 iterations."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        1.7946555438167890E-02</value>, <value name="scaledStepLength">        2.0035529041164364E+00</value>, <value name="tolerance">        1.0000000000000000E-10</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   <Error category="error">Could not converge after re-scaling equations in <value name="block">"1"</value></Error>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error] <Error category="error">Evaluating the derivatives failed while evaluating the event indicators at <value name="t">        4.6051109374292693E+01</value></Error>

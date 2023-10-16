@@ -1,0 +1,6 @@
+use 2020 down sampled rows of data for calibration, downsampling 2020P2_calibration_data_30m_qthres0.9_bins30
+
+simulation: calibration_2_param_dist_2.json, 354 runs for sensitivity analysis, but only 278 valid runs without none.  but only selected MAPE within 15%
+
+
+down sampling thres 0.8

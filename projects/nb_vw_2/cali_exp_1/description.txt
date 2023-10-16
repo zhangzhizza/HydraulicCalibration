@@ -1,0 +1,7 @@
+use 2020 first 50 rows of data for calibration
+
+simulation: calibration_2_param_dist.json, 42+69 runs for sensitivity analysis.  but only selected MAPE within 15%
+
+in the first 50 rows of data, pump 9 and 10 are all zero, and pump 11 and 12 have the same frequency, so these three columns are deleted, only keep 1
+
+down sampling thres 0.8

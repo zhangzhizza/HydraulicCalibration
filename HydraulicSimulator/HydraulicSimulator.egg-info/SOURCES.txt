@@ -1,0 +1,6 @@
+setup.py
+HydraulicSimulator.egg-info/PKG-INFO
+HydraulicSimulator.egg-info/SOURCES.txt
+HydraulicSimulator.egg-info/dependency_links.txt
+HydraulicSimulator.egg-info/requires.txt
+HydraulicSimulator.egg-info/top_level.txt

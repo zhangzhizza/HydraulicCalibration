@@ -1,0 +1,3 @@
+modelica-builder
+pandas
+scipy

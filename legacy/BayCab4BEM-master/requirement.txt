@@ -1,0 +1,9 @@
+pyDOE
+numpy
+scipy
+theano
+pyMC3
+sklearn
+pystan
+matplotlib
+seaborn
