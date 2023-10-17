@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# temporary modelica running files
+tmpsimu/
+tmpcomp/
+
 # C extensions
 *.so
 
