@@ -3,6 +3,7 @@
 import os
 import time
 import copy
+import shutil
 import traceback
 import numpy as np
 import pandas as pd
@@ -321,7 +322,7 @@ class Simulator():
 		return sim_res
 
 	def _base_simulate(self, moenv, start_time, final_time, 
-						set_param_dict, res_names):
+						set_param_dict, res_names, debug = False):
 		sim_res_dir = moenv.simulate(start_time=start_time, 
 					final_time=final_time, 
 					set_param_dict = set_param_dict,
@@ -339,4 +340,7 @@ class Simulator():
 			res = res.values
 		except:
 			res = res
+		# clear result directory
+		if not debug:
+			shutil.rmtree(sim_res_dir, ignore_errors = False) 
 		return res
