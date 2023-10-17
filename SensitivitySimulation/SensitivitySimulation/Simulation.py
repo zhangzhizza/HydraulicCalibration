@@ -3,6 +3,7 @@
 import os
 import copy
 import time
+import random
 import traceback
 import numpy as np
 from concurrent.futures import ThreadPoolExecutor
@@ -37,7 +38,7 @@ class SensitivitySimulation():
 		self._logger = Logger().getLogger('SensitivitySimulation',\
                                         log_level, LOG_FMT)
 
-	def run(self, samples_n, max_workers=3):
+	def run(self, samples_n, max_workers=3, inputs_sample_n=None):
 		################################################################
 		# use the sampler to get sampled parameter values
 		# param_vals is a 2-D array
@@ -54,7 +55,8 @@ class SensitivitySimulation():
 							param_val = param_val, 
 							root_res_dir = self._res_dir, 
 							sim_inputs = self._sim_inputs, 
-							output_names = self._output_names)
+							output_names = self._output_names,
+							inputs_sample_n = inputs_sample_n)
 				time.sleep(1)
 				jobs.append(job_i)
 			wait(jobs)
@@ -63,7 +65,7 @@ class SensitivitySimulation():
 
 	def _run_single_simulation(self, org_simulator, run_id, 
 							param_names, param_val, root_res_dir,
-							sim_inputs, output_names):
+							sim_inputs, output_names, inputs_sample_n = None):
 		model_set_param = dict(zip(param_names, param_val))
 		# make result directory
 		this_res_dir = root_res_dir + os.sep + 'run_{}'.format(run_id)
@@ -74,6 +76,10 @@ class SensitivitySimulation():
 		this_simulator.res_dir = this_res_dir
 		this_simulator.mo_set_params = model_set_param
 		try:
+			if inputs_sample_n is not None:
+				sim_inputs_len = len(sim_inputs[list(sim_inputs.keys())[0]])
+				random_indices = random.sample(range(sim_inputs_len), inputs_sample_n)
+				sim_inputs = {k:v[random_indices] for k, v in sim_inputs.items()}
 			sim_res_ls = this_simulator.simulate(
 								sim_inputs, output_names)
 			# write the results to file

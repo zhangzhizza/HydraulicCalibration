@@ -38,4 +38,4 @@ outputs = ['chw_sup_m.m_flow', 'chw_sup_P.p', 'terminal_resist.y_actual']
 sampler = SamplesGenerator(param_json_path)
 sssim = SensitivitySimulation(sampler, simulator, param_names, res_dir,
                              sim_inputs, outputs)
-sssim.run(samples_n=300, max_workers=10)
+sssim.run(samples_n=300, max_workers=10, inputs_sample_n=200)
