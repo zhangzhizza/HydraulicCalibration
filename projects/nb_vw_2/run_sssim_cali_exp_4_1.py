@@ -9,7 +9,7 @@ sudo_pwd = '123456'
 log_level = 'DEBUG'
 search_fail_return = True
 calibration_data = pd.read_csv('2020P2_calibration_data_30m.csv')
-tgt_sup_pre = {'tgt_sup_pre_sp': calibration_data['NB2_S_1_NYZ_sys_x_PcwOut_x'].values,
+tgt_sup_pre = {
 			 'tgt_sup_pre_pv_name': 'chw_sup_P.p',
 			 'sup_pre_cv_name': 'terminal_resist_ratio.k',
 			 'sup_pre_cv_range': [0.1, 1]}
