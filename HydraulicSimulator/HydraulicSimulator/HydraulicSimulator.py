@@ -188,7 +188,6 @@ class Simulator():
 			for i in range(all_input_vals.shape[0]):
 				self._logger.info('=======Simulation Iteration: {} '\
 									'======='.format(i))
-				tgt_sup_pre_sp = inputs[tgt_sup_pre_pv_name][i]
 				input_val_i = all_input_vals[i]
 				if np.isnan(input_val_i).sum() > 0:
 					continue
