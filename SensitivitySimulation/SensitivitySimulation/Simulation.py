@@ -6,8 +6,7 @@ import time
 import random
 import traceback
 import numpy as np
-from concurrent.futures import ThreadPoolExecutor
-from concurrent.futures import wait
+import multiprocessing
 
 from .Utils.Logger import Logger
 
@@ -45,23 +44,25 @@ class SensitivitySimulation():
 		param_vals = self._sampler.generate_params(samples_n)
 		################################################################
 		# parallelly run multiple simulations
-		with ThreadPoolExecutor(max_workers = max_workers) as executor:
-			jobs = []
-			for i in range(len(param_vals)):
-				param_val = param_vals[i]
-				job_i = executor.submit(self._run_single_simulation,
-							org_simulator = self._simulator, 
-							run_id = i, param_names = self._param_names, 
-							param_val = param_val, 
-							root_res_dir = self._res_dir, 
-							sim_inputs = self._sim_inputs, 
-							output_names = self._output_names,
-							inputs_sample_n = inputs_sample_n)
-				time.sleep(1)
-				jobs.append(job_i)
-			wait(jobs)
-		for job in jobs:
-			result = job.result()
+		pool = multiprocessing.Pool(processes = max_workers)
+		processes = []
+		for i in range(len(param_vals)):
+			param_val = param_vals[i]
+			processes.append(pool.apply_async(self._run_single_simulation, 
+												dict(
+												org_simulator = self._simulator, 
+												run_id = i, 
+												param_names = self._param_names, 
+												param_val = param_val, 
+												root_res_dir = self._res_dir, 
+												sim_inputs = self._sim_inputs, 
+												output_names = self._output_names,
+												inputs_sample_n = inputs_sample_n)))
+			time.sleep(1)
+		# close the pool so no more processes can be added
+		pool.close()
+		# wait for all processes to finish before processing the results
+		pool.join()
 
 	def _run_single_simulation(self, org_simulator, run_id, 
 							param_names, param_val, root_res_dir,
@@ -80,6 +81,8 @@ class SensitivitySimulation():
 				sim_inputs_len = len(sim_inputs[list(sim_inputs.keys())[0]])
 				random_indices = random.sample(range(sim_inputs_len), inputs_sample_n)
 				sim_inputs = {k:v[random_indices] for k, v in sim_inputs.items()}
+				np.savetxt(this_res_dir + os.sep + 'random_indices.csv', 
+							random_indices, delimiter = ',')
 			sim_res_ls = this_simulator.simulate(
 								sim_inputs, output_names)
 			# write the results to file
