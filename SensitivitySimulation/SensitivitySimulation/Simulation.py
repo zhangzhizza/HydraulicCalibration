@@ -49,15 +49,9 @@ class SensitivitySimulation():
 		for i in range(len(param_vals)):
 			param_val = param_vals[i]
 			processes.append(pool.apply_async(self._run_single_simulation, 
-												dict(
-												org_simulator = self._simulator, 
-												run_id = i, 
-												param_names = self._param_names, 
-												param_val = param_val, 
-												root_res_dir = self._res_dir, 
-												sim_inputs = self._sim_inputs, 
-												output_names = self._output_names,
-												inputs_sample_n = inputs_sample_n)))
+								(self._simulator, i, self._param_names, 
+								param_val, self._res_dir, self._sim_inputs, 
+								self._output_names, inputs_sample_n)))
 			time.sleep(1)
 		# close the pool so no more processes can be added
 		pool.close()
