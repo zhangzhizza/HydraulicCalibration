@@ -10,13 +10,13 @@ import json
 LOG_LEVEL = 'DEBUG';
 LOG_FMT = "[%(asctime)s] %(name)s %(levelname)s:%(message)s"
 
-run_dir = './run_1662911387.9247668'
+run_dir = './run_1698498221.6897368'
 field_data_file = './cali_field_data_down.csv'#'DEBUG_D_field_org_down (copy).csv'#
 sim_data_file = './cali_sim_data_down.csv'#'DEBUG_D_sim_org_down (copy).csv'#'
 ydim = 1
 x_ranges = {2: [0, 50], 3: [0, 50], 4: [0, 50], 5: [0, 50]}
 result_centers = 2
-dist_bins = 50
+dist_bins = 100
 
 logger = Logger().getLogger('ProcessTrace', 
             LOG_LEVEL, LOG_FMT, None)
