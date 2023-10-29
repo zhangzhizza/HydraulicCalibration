@@ -343,6 +343,9 @@ class Simulator():
 					raise RuntimeError(f'Simulation supply pressure error is {press_err}Pa, '\
 						'which is higher than the threshold 100, simulation terminates. '\
 						'You should check the Modelica Model.')
+				else:
+					self._logger.info(f'Simulation supply pressure error is {press_err}Pa, '\
+						'which is smaller than the threshold 100.')
 		except:
 			traceback.print_exc()
 			raise RuntimeError('_base_simulate: '\
