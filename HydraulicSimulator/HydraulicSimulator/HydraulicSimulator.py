@@ -199,7 +199,8 @@ class Simulator():
 								start_time = 0, 
 								final_time = self._step_size,
 								set_param_dict = input_dict_i,
-								res_names = output_names)
+								res_names = output_names,
+								check_pressure = True)
 					time.sleep(1)
 					jobs.append(job_i)
 				else:
@@ -208,7 +209,8 @@ class Simulator():
 								start_time = 0, 
 								final_time = self._step_size,
 								set_param_dict = input_dict_i,
-								res_names = output_names)
+								res_names = output_names,
+								check_pressure = True)
 					sim_res_ls.append(sim_res_i)
 			if threads_n is not None and type(threads_n) is int:
 				wait(jobs)
@@ -321,15 +323,26 @@ class Simulator():
 		return sim_res
 
 	def _base_simulate(self, moenv, start_time, final_time, 
-						set_param_dict, res_names, debug = False):
+						set_param_dict, res_names, 
+						check_pressure = False,
+						debug = False):
+		res_names_effective = copy.deepcopy(res_names)
+		if check_pressure is True:
+			res_names_effective.append('sup_P_err.y')
 		sim_res_dir = moenv.simulate(start_time=start_time, 
 					final_time=final_time, 
 					set_param_dict = set_param_dict,
-					res_names = res_names)
+					res_names = res_names_effective)
 		try:
 			res_pd = pd.read_csv('{}{}{}_res.csv'\
 					.format(sim_res_dir, os.sep, moenv.mo_name))
 			res = res_pd[res_names].iloc[-1]
+			if check_pressure is True:
+				press_err = res_pd['sup_P_err.y'].iloc[-1, 0]
+				if press_err > 100:
+					raise RuntimeError(f'Simulation supply pressure error is {press_err}Pa, '\
+						'which is higher than the threshold 100, simulation terminates. '\
+						'You should check the Modelica Model.')
 		except:
 			traceback.print_exc()
 			raise RuntimeError('_base_simulate: '\
