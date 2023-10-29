@@ -64,8 +64,8 @@ model nb_hydr_static_v6
   Buildings.Fluid.Sensors.Pressure chw_term_P(redeclare package Medium =
         Buildings.Media.Water)                                                                  "Chilled water pressure after terminal" annotation (
     Placement(transformation(extent = {{82, 152}, {102, 172}})));
-parameter Real chiller_pipe_len=147.39067640668364 "m";
-parameter Real chiller_v_nominal=1.4297938808892374 "m/s";
+parameter Real chiller_pipe_len=119.56895161163152 "m";
+parameter Real chiller_v_nominal=0.7016844988753406 "m/s";
   parameter Real jun_p1_dp=5000 "Pa";
   parameter Real jun_p2_dp = -5000 "Pa";
   parameter Real jun_p3_dp = -5000 "Pa";
