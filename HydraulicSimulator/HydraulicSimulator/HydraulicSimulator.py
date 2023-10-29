@@ -338,7 +338,7 @@ class Simulator():
 					.format(sim_res_dir, os.sep, moenv.mo_name))
 			res = res_pd[res_names].iloc[-1]
 			if check_pressure is True:
-				press_err = res_pd['sup_P_err.y'].iloc[-1, 0]
+				press_err = res_pd['sup_P_err.y'].iloc[-1]
 				if press_err > 100:
 					raise RuntimeError(f'Simulation supply pressure error is {press_err}Pa, '\
 						'which is higher than the threshold 100, simulation terminates. '\
