@@ -15,7 +15,7 @@ simulator = Simulator(mo_path=mo_path, res_dir=None,
                       step_size = 500,
                       fmu_path = None, mo_set_params = {},
                       tgt_sup_pre = tgt_sup_pre, tgt_search_its = 20,
-                      tgt_err_thres_perct = 1, search_fail_return = search_fail_return
+                      tgt_err_thres_perct = 1,    search_fail_return = search_fail_return
                      )
 param_names = ['parameter:Real:chiller_pipe_len',
                'parameter:Real:chiller_v_nominal']
