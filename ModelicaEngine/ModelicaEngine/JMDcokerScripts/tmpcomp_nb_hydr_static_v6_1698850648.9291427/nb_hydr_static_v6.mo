@@ -43,8 +43,8 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{18, 96}, {38, 116}})));
   Buildings.Fluid.Sensors.Pressure chw_term_P(redeclare package Medium = Buildings.Media.Water) "Chilled water pressure after terminal" annotation(
     Placement(transformation(extent = {{82, 152}, {102, 172}})));
-  parameter Real chiller_pipe_len=200 "m";
-  parameter Real chiller_v_nominal=5 "m/s";
+parameter Real chiller_pipe_len=135.75702437859712 "m";
+parameter Real chiller_v_nominal=2.5188010058684576 "m/s";
   parameter Real chr_flow_nom = 500 "Nominal flow rate of each chiller (kg/s)";
   parameter Real chr_roughness = 2.5e-5 "Roughness of the equivilent pipe of chiller (m)";
   Modelica.Blocks.Sources.Constant pump_speed_2(k = 0.6098) "Pump speed constant" annotation(

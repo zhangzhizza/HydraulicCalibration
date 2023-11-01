@@ -50,7 +50,7 @@ class SensitivitySimulation():
 		processes = []
 		for i in range(len(param_vals)):
 			param_val = param_vals[i]
-			param_val = [44.164923733582626, 2.4257761823941832]
+			#param_val = [44.164923733582626, 2.4257761823941832]
 			processes.append(pool.apply_async(self._run_single_simulation, 
 								(self._simulator, i, self._param_names, 
 								param_val, self._res_dir, self._sim_inputs, 
@@ -79,7 +79,7 @@ class SensitivitySimulation():
 			if inputs_sample_n is not None:
 				sim_inputs_len = len(sim_inputs[list(sim_inputs.keys())[0]])
 				random_indices = random.sample(range(sim_inputs_len), inputs_sample_n)
-				random_indices = [1260]
+				#random_indices = [1260]
 				sim_inputs = {k:v[random_indices] for k, v in sim_inputs.items()}
 				
 				np.savetxt(this_res_dir + os.sep + 'random_indices.csv', 

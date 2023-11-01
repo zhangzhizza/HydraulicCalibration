@@ -43,8 +43,8 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{18, 96}, {38, 116}})));
   Buildings.Fluid.Sensors.Pressure chw_term_P(redeclare package Medium = Buildings.Media.Water) "Chilled water pressure after terminal" annotation(
     Placement(transformation(extent = {{82, 152}, {102, 172}})));
-  parameter Real chiller_pipe_len=200 "m";
-  parameter Real chiller_v_nominal=5 "m/s";
+parameter Real chiller_pipe_len=131.9858575084768 "m";
+parameter Real chiller_v_nominal=4.485370190070168 "m/s";
   parameter Real chr_flow_nom = 500 "Nominal flow rate of each chiller (kg/s)";
   parameter Real chr_roughness = 2.5e-5 "Roughness of the equivilent pipe of chiller (m)";
   Modelica.Blocks.Sources.Constant pump_speed_2(k = 0.6098) "Pump speed constant" annotation(
@@ -55,7 +55,7 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{-296, -324}, {-276, -304}})));
   Modelica.Blocks.Sources.Constant ret_p(k = 394415) "Return water pressure" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 180, origin = {202, 102})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(CvData = Buildings.Fluid.Types.CvTypes.OpPoint, redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 1000, m_flow_nominal = 1200) annotation(
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(CvData = Buildings.Fluid.Types.CvTypes.OpPoint, redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 150000, m_flow_nominal = 1200) annotation(
     Placement(transformation(extent = {{32, 128}, {52, 148}})));
   Modelica.Fluid.Valves.ValveIncompressible checkvalve_1(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-116, 50}, {-136, 70}})));

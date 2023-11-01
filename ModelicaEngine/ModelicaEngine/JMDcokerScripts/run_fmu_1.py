@@ -31,7 +31,6 @@ def run_fmu(fmu_path, start_time, final_time,
   mod.set_max_log_size(2073741824) # = 2*1024^3 (about 2GB)
   ######################################################################
   # Retrieve and set solver options
-  x_nominal = mod.nominal_continuous_states
   opts = mod.simulate_options() #Retrieve the default options
   opts['solver'] = 'CVode'#'Radau5ODE' #CVode
   opts['ncp'] = ncp
@@ -40,17 +39,14 @@ def run_fmu(fmu_path, start_time, final_time,
   if opts['solver'].lower() == 'cvode':
     # Set user-specified tolerance if 
     # it is smaller than the tolerance in the .mo file
-    rtol = 1.0e-8
-    x_nominal = mod.nominal_continuous_states
-    if len(x_nominal) > 0:
-      atol = rtol*x_nominal
-    else:
-      atol = rtol
+    rtol = 1.0e-4
+    atol = rtol
     opts['CVode_options']['external_event_detection'] = False
     if ncp > 0:
       opts['CVode_options']['maxh'] = ((mod.get_default_experiment_stop_time()
                                   -mod.get_default_experiment_start_time())
                                     /float(opts['ncp']))
+    
     opts['CVode_options']['iter'] = 'Newton'
     opts['CVode_options']['discr'] = 'BDF'
     opts['CVode_options']['rtol'] = rtol
