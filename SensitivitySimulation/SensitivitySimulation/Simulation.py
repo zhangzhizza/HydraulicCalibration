@@ -1,11 +1,13 @@
 # Author: Zhiang Zhang
 # First create: 2022-08-02
 import os
+import json
 import copy
 import time
 import random
 import traceback
 import numpy as np
+import pandas as pd
 import multiprocessing
 
 from .Utils.Logger import Logger
@@ -48,6 +50,7 @@ class SensitivitySimulation():
 		processes = []
 		for i in range(len(param_vals)):
 			param_val = param_vals[i]
+			param_val = [44.164923733582626, 2.4257761823941832]
 			processes.append(pool.apply_async(self._run_single_simulation, 
 								(self._simulator, i, self._param_names, 
 								param_val, self._res_dir, self._sim_inputs, 
@@ -66,6 +69,8 @@ class SensitivitySimulation():
 		this_res_dir = root_res_dir + os.sep + 'run_{}'.format(run_id)
 		if not os.path.isdir(this_res_dir):
 			os.makedirs(this_res_dir)
+		with open(this_res_dir + os.sep + 'model_set_param.json', 'w') as param_json:
+			json.dump(model_set_param, param_json)
 		# copy a new simulator
 		this_simulator = copy.deepcopy(org_simulator)
 		this_simulator.res_dir = this_res_dir
@@ -74,9 +79,13 @@ class SensitivitySimulation():
 			if inputs_sample_n is not None:
 				sim_inputs_len = len(sim_inputs[list(sim_inputs.keys())[0]])
 				random_indices = random.sample(range(sim_inputs_len), inputs_sample_n)
+				random_indices = [1260]
 				sim_inputs = {k:v[random_indices] for k, v in sim_inputs.items()}
+				
 				np.savetxt(this_res_dir + os.sep + 'random_indices.csv', 
 							random_indices, delimiter = ',')
+			sim_inputs_df = pd.DataFrame(sim_inputs)
+			sim_inputs_df.to_csv(this_res_dir + os.sep + 'sim_inputs.csv')
 			sim_res_ls = this_simulator.simulate(
 								sim_inputs, output_names)
 			# write the results to file

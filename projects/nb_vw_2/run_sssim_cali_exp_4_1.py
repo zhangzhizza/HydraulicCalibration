@@ -2,6 +2,7 @@ from SensitivitySimulation.Simulation import SensitivitySimulation
 from SensitivitySimulation.Sampler import SamplesGenerator
 from HydraulicSimulator.HydraulicSimulator import Simulator
 import pandas as pd
+
 mo_path = '../../MoModels/nb_hydr_static_v6.mo'
 res_dir = 'nb_hydr_static_v5_sssim_cali_exp_4_1'
 param_json_path = 'calibration_param_dist_exp_4.json'# 'calibration_param_dist_exp_2.json'
@@ -15,7 +16,7 @@ simulator = Simulator(mo_path=mo_path, res_dir=None,
                       step_size = 500,
                       fmu_path = None, mo_set_params = {},
                       tgt_sup_pre = tgt_sup_pre, tgt_search_its = 20,
-                      tgt_err_thres_perct = 1, search_fail_return = search_fail_return
+                      tgt_err_thres_perct = 1,    search_fail_return = search_fail_return
                      )
 param_names = ['parameter:Real:chiller_pipe_len',
                'parameter:Real:chiller_v_nominal']
@@ -32,7 +33,8 @@ sim_inputs = {'pump_speed_1.k': calibration_data['NB2_S_1_NYZ_cwp_9_HzSPR_x'].va
               'chw_sup_PSP.k': calibration_data['NB2_S_1_NYZ_sys_x_PcwOut_x'].values
 			}
 outputs = ['chw_sup_m.m_flow', 'chw_sup_P.p', 'terminal_resist.y_actual']
+
 sampler = SamplesGenerator(param_json_path)
 sssim = SensitivitySimulation(sampler, simulator, param_names, res_dir,
                              sim_inputs, outputs)
-sssim.run(samples_n=300, max_workers=12, inputs_sample_n=200)
+sssim.run(samples_n=300, max_workers=1, inputs_sample_n=200)

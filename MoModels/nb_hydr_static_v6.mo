@@ -1,25 +1,25 @@
 model nb_hydr_static_v6
   Buildings.Fluid.Sources.Boundary_pT chw_ret(redeclare package Medium = Buildings.Media.Water, use_Xi_in = false, use_p_in = true, p = 400000, nPorts = 1) annotation(
     Placement(transformation(extent = {{142, 102}, {112, 72}})));
-  Buildings.Fluid.Movers.SpeedControlled_y chwp_1(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, massDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, p_start = 400000, redeclare Buildings.Fluid.Movers.Data.Pumps.Wilo.CronolineIL80slash220dash4slash4 per(pressure(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, dp = {634500, 625500, 617660, 608840, 597100, 577500, 548100, 503900}), use_powerCharacteristic = true, power(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, P = {119188.42, 129804, 142486, 156660, 171580, 187992, 205150, 223800})), addPowerToMedium = true) annotation(
+  Buildings.Fluid.Movers.SpeedControlled_y chwp_1(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, massDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, p_start = 400000, redeclare Buildings.Fluid.Movers.Data.Pumps.Wilo.CronolineIL80slash220dash4slash4 per(pressure(V_flow = {0.155, 0.226, 0.286, 0.336, 0.379, 0.414, 0.445, 0.470, 0.492, 0.511, 0.527, 0.540, 0.552, 0.562, 0.569, 0.575, 0.577}, dp = {160000*5, 150000*5, 140000*5, 130000*5, 120000*5, 110000*5, 100000*5, 90000*5, 80000*5, 70000*5, 60000*5, 50000*5, 40000*5, 30000*5, 20000*5, 10000*5, 10*5}), use_powerCharacteristic = true, power(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, P = {119188.42, 129804, 142486, 156660, 171580, 187992, 205150, 223800})), addPowerToMedium = true) annotation(
     Placement(transformation(extent = {{-64, 76}, {-96, 44}})));
   Buildings.Fluid.FixedResistances.Pipe chiller_1(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.FixedInitial, massDynamics = Modelica.Fluid.Types.Dynamics.FixedInitial, allowFlowReversal = true, m_flow_nominal = chr_flow_nom, m_flow_small = 0.0001, nSeg = 10, thicknessIns = 0.1, lambdaIns = 0.1, length = chiller_pipe_len, v_nominal = chiller_v_nominal, roughness = chr_roughness, useMultipleHeatPorts = false) annotation(
     Placement(transformation(extent = {{-162, 40}, {-202, 80}})));
   Buildings.Fluid.FixedResistances.Junction jun_1(redeclare package Medium = Buildings.Media.Water, m_flow_nominal = {100, -100, -100}, dp_nominal = {10, 0, 0}) annotation(
     Placement(transformation(extent = {{-14, -14}, {14, 14}}, rotation = -90, origin = {0, 60})));
-  Buildings.Fluid.Movers.SpeedControlled_y chwp_2(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, massDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, p_start = 400000, redeclare Buildings.Fluid.Movers.Data.Pumps.Wilo.CronolineIL80slash220dash4slash4 per(pressure(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, dp = {634500, 625500, 617660, 608840, 597100, 577500, 548100, 503900}), power(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, P = {119188.42, 129804, 142486, 156660, 171580, 187992, 205150, 223800}), speed_rpm_nominal = 1480), addPowerToMedium = true) annotation(
+  Buildings.Fluid.Movers.SpeedControlled_y chwp_2(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, massDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, p_start = 400000, redeclare Buildings.Fluid.Movers.Data.Pumps.Wilo.CronolineIL80slash220dash4slash4 per(pressure(V_flow = {0.155, 0.226, 0.286, 0.336, 0.379, 0.414, 0.445, 0.470, 0.492, 0.511, 0.527, 0.540, 0.552, 0.562, 0.569, 0.575, 0.577}, dp = {160000*5, 150000*5, 140000*5, 130000*5, 120000*5, 110000*5, 100000*5, 90000*5, 80000*5, 70000*5, 60000*5, 50000*5, 40000*5, 30000*5, 20000*5, 10000*5, 10*5}), power(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, P = {119188.42, 129804, 142486, 156660, 171580, 187992, 205150, 223800}), speed_rpm_nominal = 1480), addPowerToMedium = true) annotation(
     Placement(transformation(extent = {{-64, -4}, {-96, -36}})));
   Buildings.Fluid.FixedResistances.Pipe chiller_2(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.FixedInitial, massDynamics = Modelica.Fluid.Types.Dynamics.FixedInitial, allowFlowReversal = true, m_flow_nominal = chr_flow_nom, m_flow_small = 0.0001, nSeg = 10, thicknessIns = 0.1, lambdaIns = 0.1, length = chiller_pipe_len, v_nominal = chiller_v_nominal, roughness = chr_roughness, useMultipleHeatPorts = false) annotation(
     Placement(transformation(extent = {{-160, -40}, {-200, 0}})));
   Buildings.Fluid.FixedResistances.Junction jun_2(redeclare package Medium = Buildings.Media.Water, m_flow_nominal = {100, -100, -100}, dp_nominal = {10, 0, 0}) annotation(
     Placement(transformation(extent = {{-14, -14}, {14, 14}}, rotation = -90, origin = {0, -20})));
-  Buildings.Fluid.Movers.SpeedControlled_y chwp_3(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, massDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, p_start = 400000, redeclare Buildings.Fluid.Movers.Data.Pumps.Wilo.CronolineIL80slash220dash4slash4 per(pressure(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, dp = {634500, 625500, 617660, 608840, 597100, 577500, 548100, 503900}), power(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, P = {119188.42, 129804, 142486, 156660, 171580, 187992, 205150, 223800}), speed_rpm_nominal = 1480), addPowerToMedium = true) annotation(
+  Buildings.Fluid.Movers.SpeedControlled_y chwp_3(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, massDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, p_start = 400000, redeclare Buildings.Fluid.Movers.Data.Pumps.Wilo.CronolineIL80slash220dash4slash4 per(pressure(V_flow = {0.155, 0.226, 0.286, 0.336, 0.379, 0.414, 0.445, 0.470, 0.492, 0.511, 0.527, 0.540, 0.552, 0.562, 0.569, 0.575, 0.577}, dp = {160000*5, 150000*5, 140000*5, 130000*5, 120000*5, 110000*5, 100000*5, 90000*5, 80000*5, 70000*5, 60000*5, 50000*5, 40000*5, 30000*5, 20000*5, 10000*5, 10*5}), power(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, P = {119188.42, 129804, 142486, 156660, 171580, 187992, 205150, 223800}), speed_rpm_nominal = 1480), addPowerToMedium = true) annotation(
     Placement(transformation(extent = {{-64, -84}, {-96, -116}})));
   Buildings.Fluid.FixedResistances.Pipe chiller_3(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.FixedInitial, massDynamics = Modelica.Fluid.Types.Dynamics.FixedInitial, allowFlowReversal = true, m_flow_nominal = chr_flow_nom, m_flow_small = 0.0001, nSeg = 10, thicknessIns = 0.1, lambdaIns = 0.1, length = chiller_pipe_len, v_nominal = chiller_v_nominal, roughness = chr_roughness, useMultipleHeatPorts = false) annotation(
     Placement(transformation(extent = {{-160, -120}, {-200, -80}})));
   Buildings.Fluid.FixedResistances.Junction jun_3(redeclare package Medium = Buildings.Media.Water, m_flow_nominal = {100, -100, -100}, dp_nominal = {10, 0, 0}) annotation(
     Placement(transformation(extent = {{-14, -14}, {14, 14}}, rotation = -90, origin = {0, -100})));
-  Buildings.Fluid.Movers.SpeedControlled_y chwp_4(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, massDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, p_start = 400000, redeclare Buildings.Fluid.Movers.Data.Pumps.Wilo.CronolineIL80slash220dash4slash4 per(pressure(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, dp = {634500, 625500, 617660, 608840, 597100, 577500, 548100, 503900}), power(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, P = {119188.42, 129804, 142486, 156660, 171580, 187992, 205150, 223800}), speed_rpm_nominal = 1480), addPowerToMedium = true) annotation(
+  Buildings.Fluid.Movers.SpeedControlled_y chwp_4(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, massDynamics = Modelica.Fluid.Types.Dynamics.SteadyState, p_start = 400000, redeclare Buildings.Fluid.Movers.Data.Pumps.Wilo.CronolineIL80slash220dash4slash4 per(pressure(V_flow = {0.155, 0.226, 0.286, 0.336, 0.379, 0.414, 0.445, 0.470, 0.492, 0.511, 0.527, 0.540, 0.552, 0.562, 0.569, 0.575, 0.577}, dp = {160000*5, 150000*5, 140000*5, 130000*5, 120000*5, 110000*5, 100000*5, 90000*5, 80000*5, 70000*5, 60000*5, 50000*5, 40000*5, 30000*5, 20000*5, 10000*5, 10*5}), power(V_flow = {0, 0.0556, 0.1114, 0.1667, 0.2192, 0.2769, 0.3331, 0.3897}, P = {119188.42, 129804, 142486, 156660, 171580, 187992, 205150, 223800}), speed_rpm_nominal = 1480), addPowerToMedium = true) annotation(
     Placement(transformation(extent = {{-64, -164}, {-96, -196}})));
   Buildings.Fluid.FixedResistances.Pipe chiller_4(redeclare package Medium = Buildings.Media.Water, energyDynamics = Modelica.Fluid.Types.Dynamics.FixedInitial, massDynamics = Modelica.Fluid.Types.Dynamics.FixedInitial, allowFlowReversal = true, m_flow_nominal = chr_flow_nom, m_flow_small = 0.0001, nSeg = 10, thicknessIns = 0.1, lambdaIns = 0.1, length = chiller_pipe_len, v_nominal = chiller_v_nominal, roughness = chr_roughness, useMultipleHeatPorts = false) annotation(
     Placement(transformation(extent = {{-160, -200}, {-200, -160}})));
@@ -43,13 +43,9 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{18, 96}, {38, 116}})));
   Buildings.Fluid.Sensors.Pressure chw_term_P(redeclare package Medium = Buildings.Media.Water) "Chilled water pressure after terminal" annotation(
     Placement(transformation(extent = {{82, 152}, {102, 172}})));
-  parameter Real chiller_pipe_len=150 "m";
-  parameter Real chiller_v_nominal=3 "m/s";
-  parameter Real jun_p1_dp = 5000 "Pa";
-  parameter Real jun_p2_dp = -5000 "Pa";
-  parameter Real jun_p3_dp = -5000 "Pa";
-  parameter Real chr_pipe_len = 50 "Equivilent length of pipe for chiller pressure drop (m)";
-  parameter Real chr_flow_nom = 80 "Nominal flow rate of each chiller (kg/s)";
+  parameter Real chiller_pipe_len=200 "m";
+  parameter Real chiller_v_nominal=5 "m/s";
+  parameter Real chr_flow_nom = 500 "Nominal flow rate of each chiller (kg/s)";
   parameter Real chr_roughness = 2.5e-5 "Roughness of the equivilent pipe of chiller (m)";
   Modelica.Blocks.Sources.Constant pump_speed_2(k = 0) "Pump speed constant" annotation(
     Placement(transformation(extent = {{-338, -280}, {-318, -260}})));
@@ -59,25 +55,25 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{-296, -324}, {-276, -304}})));
   Modelica.Blocks.Sources.Constant ret_p(k = 380000) "Return water pressure" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 180, origin = {202, 102})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(CvData = Buildings.Fluid.Types.CvTypes.OpPoint, redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 50000, m_flow_nominal = 1500) annotation(
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(CvData = Buildings.Fluid.Types.CvTypes.OpPoint, redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 10000, m_flow_nominal = 1500) annotation(
     Placement(transformation(extent = {{32, 128}, {52, 148}})));
-  Modelica.Fluid.Valves.ValveIncompressible checkvalve_1(redeclare package Medium = Buildings.Media.Water, dp_nominal(displayUnit = "Pa") = 1000, m_flow_nominal = chr_flow_nom, checkValve = true) annotation(
+  Modelica.Fluid.Valves.ValveIncompressible checkvalve_1(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-116, 50}, {-136, 70}})));
-  Modelica.Fluid.Valves.ValveIncompressible checkvalve_2(redeclare package Medium = Buildings.Media.Water, dp_nominal(displayUnit = "Pa") = 1000, m_flow_nominal = chr_flow_nom, checkValve = true) annotation(
+  Modelica.Fluid.Valves.ValveIncompressible checkvalve_2(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-118, -30}, {-138, -10}})));
-  Modelica.Fluid.Valves.ValveIncompressible checkvalve_3(redeclare package Medium = Buildings.Media.Water, dp_nominal(displayUnit = "Pa") = 1000, m_flow_nominal = chr_flow_nom, checkValve = true) annotation(
+  Modelica.Fluid.Valves.ValveIncompressible checkvalve_3(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-116, -110}, {-136, -90}})));
-  Modelica.Fluid.Valves.ValveIncompressible checkvalve_4(redeclare package Medium = Buildings.Media.Water, dp_nominal(displayUnit = "Pa") = 1000, m_flow_nominal = chr_flow_nom, checkValve = true) annotation(
+  Modelica.Fluid.Valves.ValveIncompressible checkvalve_4(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-116, -190}, {-136, -170}})));
   Modelica.Blocks.Sources.Constant const_1(k = 1) "A constant" annotation(
     Placement(visible = true, transformation(origin = {-16, 6}, extent = {{-248, -262}, {-228, -242}}, rotation = 0)));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_1(redeclare package Medium = Buildings.Media.Water, m_flow_nominal = chr_flow_nom, dpValve_nominal = 5000) annotation(
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_1(redeclare package Medium = Buildings.Media.Water, dpValve_nominal = 500, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{10, -10}, {-10, 10}}, rotation = 0, origin = {-42, 60})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_2(redeclare package Medium = Buildings.Media.Water, m_flow_nominal = chr_flow_nom, dpValve_nominal = 5000) annotation(
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_2(redeclare package Medium = Buildings.Media.Water, dpValve_nominal = 500, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{10, -10}, {-10, 10}}, rotation = 0, origin = {-40, -20})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_3(redeclare package Medium = Buildings.Media.Water, m_flow_nominal = chr_flow_nom, dpValve_nominal = 5000) annotation(
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_3(redeclare package Medium = Buildings.Media.Water, dpValve_nominal = 500, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{10, -10}, {-10, 10}}, rotation = 0, origin = {-40, -100})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_4(redeclare package Medium = Buildings.Media.Water, m_flow_nominal = chr_flow_nom, dpValve_nominal = 5000) annotation(
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_4(redeclare package Medium = Buildings.Media.Water, dpValve_nominal = 500, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{10, -10}, {-10, 10}}, rotation = 0, origin = {-40, -180})));
   Modelica.Blocks.Sources.Constant val_pos_1(k = 0) "Valve position constant" annotation(
     Placement(transformation(extent = {{-254, -300}, {-234, -280}})));
@@ -87,11 +83,11 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{-210, -274}, {-190, -254}})));
   Modelica.Blocks.Sources.Constant val_pos_4(k = 1) "Valve position constant" annotation(
     Placement(transformation(extent = {{-210, -312}, {-190, -292}})));
-  Buildings.Controls.Continuous.LimPID conPID(Ti = 25, controllerType = Modelica.Blocks.Types.SimpleController.PI, k = 0.000005, reverseActing = false, yMax = 1, yMin = 0.01) annotation(
+  Buildings.Controls.Continuous.LimPID conPID(Ti = 25, controllerType = Modelica.Blocks.Types.SimpleController.PI, k = 0.000005, reverseActing = false, yMax = 1, yMin = 0.05) annotation(
     Placement(transformation(extent = {{8, 176}, {28, 196}})));
   Modelica.Blocks.Sources.Constant chw_sup_PSP(k = 440000) "Supply chilled water pressure setpoint" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 0, origin = {-50, 180})));
-  Modelica.Blocks.Math.Add difference(k2 = -1)  annotation(
+  Modelica.Blocks.Math.Add difference(k2 = -1) annotation(
     Placement(visible = true, transformation(origin = {68, 184}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Math.Abs sup_P_err annotation(
     Placement(visible = true, transformation(origin = {102, 184}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
