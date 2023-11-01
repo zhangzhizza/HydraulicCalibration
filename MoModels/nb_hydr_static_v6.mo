@@ -55,26 +55,17 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{-296, -324}, {-276, -304}})));
   Modelica.Blocks.Sources.Constant ret_p(k = 394415) "Return water pressure" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 180, origin = {202, 102})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(CvData = Buildings.Fluid.Types.CvTypes.OpPoint, redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 1000, m_flow_nominal = 1200) annotation(
+
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 10000, m_flow_nominal = 1200) annotation(
     Placement(transformation(extent = {{32, 128}, {52, 148}})));
-  Modelica.Fluid.Valves.ValveIncompressible checkvalve_1(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
+  Modelica.Fluid.Valves.ValveIncompressible checkvalve_1(CvData = Modelica.Fluid.Types.CvTypes.OpPoint,redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 10000, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-116, 50}, {-136, 70}})));
-  Modelica.Fluid.Valves.ValveIncompressible checkvalve_2(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
+  Modelica.Fluid.Valves.ValveIncompressible checkvalve_2(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 10000, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-118, -30}, {-138, -10}})));
-  Modelica.Fluid.Valves.ValveIncompressible checkvalve_3(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
+  Modelica.Fluid.Valves.ValveIncompressible checkvalve_3(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 10000, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-116, -110}, {-136, -90}})));
-  Modelica.Fluid.Valves.ValveIncompressible checkvalve_4(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 100, m_flow_nominal = chr_flow_nom) annotation(
+  Modelica.Fluid.Valves.ValveIncompressible checkvalve_4(redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 10000, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-116, -190}, {-136, -170}})));
-  Modelica.Blocks.Sources.Constant const_1(k = 1) "A constant" annotation(
-    Placement(visible = true, transformation(origin = {-16, 6}, extent = {{-248, -262}, {-228, -242}}, rotation = 0)));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_1(redeclare package Medium = Buildings.Media.Water, dpValve_nominal = 500, m_flow_nominal = chr_flow_nom) annotation(
-    Placement(transformation(extent = {{10, -10}, {-10, 10}}, rotation = 0, origin = {-42, 60})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_2(redeclare package Medium = Buildings.Media.Water, dpValve_nominal = 500, m_flow_nominal = chr_flow_nom) annotation(
-    Placement(transformation(extent = {{10, -10}, {-10, 10}}, rotation = 0, origin = {-40, -20})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_3(redeclare package Medium = Buildings.Media.Water, dpValve_nominal = 500, m_flow_nominal = chr_flow_nom) annotation(
-    Placement(transformation(extent = {{10, -10}, {-10, 10}}, rotation = 0, origin = {-40, -100})));
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear chwp_val_4(redeclare package Medium = Buildings.Media.Water, dpValve_nominal = 500, m_flow_nominal = chr_flow_nom) annotation(
-    Placement(transformation(extent = {{10, -10}, {-10, 10}}, rotation = 0, origin = {-40, -180})));
   Modelica.Blocks.Sources.Constant val_pos_1(k = 0.001) "Valve position constant" annotation(
     Placement(transformation(extent = {{-254, -300}, {-234, -280}})));
   Modelica.Blocks.Sources.Constant val_pos_2(k = 1) "Valve position constant" annotation(
@@ -83,7 +74,8 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{-210, -274}, {-190, -254}})));
   Modelica.Blocks.Sources.Constant val_pos_4(k = 0.001) "Valve position constant" annotation(
     Placement(transformation(extent = {{-210, -312}, {-190, -292}})));
-  Buildings.Controls.Continuous.LimPID conPID(Ti = 25, controllerType = Modelica.Blocks.Types.SimpleController.PI, k = 0.000005, reverseActing = false, yMax = 1, yMin = 0.05, y_start=1) annotation(
+
+  Buildings.Controls.Continuous.LimPID conPID(Ti = 25, controllerType = Modelica.Blocks.Types.SimpleController.PI, k = 0.000005, reverseActing = false, yMax = 1, yMin = 0.05, y_start = 1) annotation(
     Placement(transformation(extent = {{8, 176}, {28, 196}})));
   Modelica.Blocks.Sources.Constant chw_sup_PSP(k = 453400) "Supply chilled water pressure setpoint" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 0, origin = {-50, 180})));
@@ -150,42 +142,8 @@ equation
     Line(points = {{-96, -180}, {-116, -180}}, color = {0, 127, 255}));
   connect(checkvalve_4.port_b, chiller_4.port_a) annotation(
     Line(points = {{-136, -180}, {-160, -180}}, color = {0, 127, 255}));
-  connect(const_1.y, checkvalve_4.opening) annotation(
-    Line(points = {{-243, -246}, {-232, -246}, {-232, -160}, {-126, -160}, {-126, -172}}, color = {0, 0, 127}));
-  connect(const_1.y, checkvalve_3.opening) annotation(
-    Line(points = {{-243, -246}, {-234, -246}, {-234, -66}, {-124, -66}, {-124, -64}, {-122, -64}, {-122, -66}, {-124, -66}, {-124, -86}, {-126, -86}, {-126, -92}}, color = {0, 0, 127}));
-  connect(const_1.y, checkvalve_2.opening) annotation(
-    Line(points = {{-243, -246}, {-234, -246}, {-234, 4}, {-128, 4}, {-128, -12}}, color = {0, 0, 127}));
-  connect(const_1.y, checkvalve_1.opening) annotation(
-    Line(points = {{-243, -246}, {-234, -246}, {-234, 88}, {-126, 88}, {-126, 68}}, color = {0, 0, 127}));
-  connect(jun_1.port_3, chwp_val_1.port_a) annotation(
-    Line(points = {{-14, 60}, {-32, 60}}, color = {0, 127, 255}));
-  connect(chwp_val_1.port_b, chwp_1.port_a) annotation(
-    Line(points = {{-52, 60}, {-64, 60}}, color = {0, 127, 255}));
-  connect(jun_2.port_3, chwp_val_2.port_a) annotation(
-    Line(points = {{-14, -20}, {-30, -20}}, color = {0, 127, 255}));
-  connect(chwp_val_2.port_b, chwp_2.port_a) annotation(
-    Line(points = {{-50, -20}, {-64, -20}}, color = {0, 127, 255}));
-  connect(jun_3.port_3, chwp_val_3.port_a) annotation(
-    Line(points = {{-14, -100}, {-30, -100}}, color = {0, 127, 255}));
-  connect(chwp_val_3.port_b, chwp_3.port_a) annotation(
-    Line(points = {{-50, -100}, {-64, -100}}, color = {0, 127, 255}));
-  connect(jun_3.port_2, chwp_val_4.port_a) annotation(
-    Line(points = {{0, -114}, {0, -180}, {-30, -180}}, color = {0, 127, 255}));
-  connect(chwp_val_4.port_b, chwp_4.port_a) annotation(
-    Line(points = {{-50, -180}, {-64, -180}}, color = {0, 127, 255}));
-  connect(val_pos_1.y, chwp_val_1.y) annotation(
-    Line(points = {{-233, -290}, {-142, -290}, {-142, -244}, {14, -244}, {14, 90}, {-42, 90}, {-42, 72}}, color = {0, 0, 127}));
-  connect(val_pos_2.y, chwp_val_2.y) annotation(
-    Line(points = {{-235, -324}, {-144, -324}, {-144, -284}, {14, -284}, {14, 4}, {-40, 4}, {-40, -8}}, color = {0, 0, 127}));
-  connect(val_pos_3.y, chwp_val_3.y) annotation(
-    Line(points = {{-189, -264}, {-104, -264}, {-104, -238}, {14, -238}, {14, -78}, {-40, -78}, {-40, -88}}, color = {0, 0, 127}));
-  connect(val_pos_4.y, chwp_val_4.y) annotation(
-    Line(points = {{-189, -302}, {14, -302}, {14, -156}, {-40, -156}, {-40, -168}}, color = {0, 0, 127}));
   connect(ret_p.y, chw_sup.p_in) annotation(
     Line(points = {{191, 102}, {179, 102}, {179, 145}}, color = {0, 0, 127}));
-  connect(conPID.y, terminal_resist.y) annotation(
-    Line(points = {{29, 186}, {40, 186}, {40, 160}, {42, 160}, {42, 150}}, color = {0, 0, 127}));
   connect(chw_sup_P.p, conPID.u_m) annotation(
     Line(points = {{-1, 162}, {18, 162}, {18, 174}}, color = {0, 0, 127}));
   connect(chw_sup_PSP.y, conPID.u_s) annotation(
@@ -196,6 +154,24 @@ equation
     Line(points = {{-39, 180}, {-24, 180}, {-24, 202}, {50, 202}, {50, 190}, {56, 190}}, color = {0, 0, 127}));
   connect(difference.y, sup_P_err.u) annotation(
     Line(points = {{79, 184}, {90, 184}}, color = {0, 0, 127}));
+  connect(conPID.y, terminal_resist.y) annotation(
+    Line(points = {{30, 186}, {42, 186}, {42, 146}}, color = {0, 0, 127}));
+  connect(chwp_1.port_a, jun_1.port_3) annotation(
+    Line(points = {{-64, 60}, {-14, 60}}, color = {0, 127, 255}));
+  connect(chwp_2.port_a, jun_2.port_3) annotation(
+    Line(points = {{-64, -20}, {-14, -20}}, color = {0, 127, 255}));
+  connect(chwp_3.port_a, jun_3.port_3) annotation(
+    Line(points = {{-64, -100}, {-14, -100}}, color = {0, 127, 255}));
+  connect(chwp_4.port_a, jun_3.port_2) annotation(
+    Line(points = {{-64, -180}, {0, -180}, {0, -114}}, color = {0, 127, 255}));
+  connect(val_pos_3.y, checkvalve_3.opening) annotation(
+    Line(points = {{-188, -264}, {-158, -264}, {-158, -70}, {-126, -70}, {-126, -92}}, color = {0, 0, 127}));
+  connect(val_pos_4.y, checkvalve_4.opening) annotation(
+    Line(points = {{-188, -302}, {-158, -302}, {-158, -150}, {-126, -150}, {-126, -172}}, color = {0, 0, 127}));
+  connect(val_pos_1.y, checkvalve_1.opening) annotation(
+    Line(points = {{-232, -290}, {-158, -290}, {-158, 102}, {-126, 102}, {-126, 68}}, color = {0, 0, 127}));
+  connect(val_pos_2.y, checkvalve_2.opening) annotation(
+    Line(points = {{-234, -324}, {-158, -324}, {-158, 8}, {-128, 8}, {-128, -12}}, color = {0, 0, 127}));
   annotation(
     Diagram(coordinateSystem(extent = {{-360, -340}, {220, 200}}), graphics = {Rectangle(lineColor = {28, 108, 200}, fillColor = {255, 255, 170}, fillPattern = FillPattern.Solid, extent = {{-360, -226}, {-180, -340}}), Text(extent = {{-356, -234}, {-256, -268}}, textString = "Control Signals
     ")}),
