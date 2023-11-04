@@ -67,6 +67,11 @@ class SensitivitySimulation():
 		model_set_param = dict(zip(param_names, param_val))
 		# make result directory
 		this_res_dir = root_res_dir + os.sep + 'run_{}'.format(run_id)
+		run_id_existed = os.path.isdir(this_res_dir)
+		while run_id_existed:
+			run_id += 1
+			this_res_dir = root_res_dir + os.sep + 'run_{}'.format(run_id)
+			run_id_existed = os.path.isdir(this_res_dir)
 		if not os.path.isdir(this_res_dir):
 			os.makedirs(this_res_dir)
 		with open(this_res_dir + os.sep + 'model_set_param.json', 'w') as param_json:
