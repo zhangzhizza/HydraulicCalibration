@@ -43,6 +43,7 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{18, 96}, {38, 116}})));
   Buildings.Fluid.Sensors.Pressure chw_term_P(redeclare package Medium = Buildings.Media.Water) "Chilled water pressure after terminal" annotation(
     Placement(transformation(extent = {{82, 152}, {102, 172}})));
+
   parameter Real chr_flow_nom = 200 "Nominal flow rate of each chiller (kg/s)";
   parameter Real chr_dp_nom = 200000 "Nominal Dp of each chiller (Pa)";
   Modelica.Blocks.Sources.Constant pump_speed_2(k = 0.5760) "Pump speed constant" annotation(
@@ -53,6 +54,7 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{-296, -324}, {-276, -304}})));
   Modelica.Blocks.Sources.Constant ret_p(k = 334548) "Return water pressure" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 180, origin = {202, 102})));
+
   Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 10000, m_flow_nominal = 1200) annotation(
     Placement(transformation(extent = {{32, 128}, {52, 148}})));
   Modelica.Fluid.Valves.ValveIncompressible checkvalve_1(CvData = Modelica.Fluid.Types.CvTypes.OpPoint,redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 10000, m_flow_nominal = chr_flow_nom) annotation(
@@ -71,6 +73,7 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{-210, -274}, {-190, -254}})));
   Modelica.Blocks.Sources.Constant val_pos_4(k = 1) "Valve position constant" annotation(
     Placement(transformation(extent = {{-210, -312}, {-190, -292}})));
+
   Buildings.Controls.Continuous.LimPID conPID(Ti = 25, controllerType = Modelica.Blocks.Types.SimpleController.PI, k = 0.000005, reverseActing = false, yMax = 1, yMin = 0.05, y_start = 1) annotation(
     Placement(transformation(extent = {{8, 176}, {28, 196}})));
   Modelica.Blocks.Sources.Constant chw_sup_PSP(k = 453433) "Supply chilled water pressure setpoint" annotation(

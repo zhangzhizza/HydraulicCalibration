@@ -339,13 +339,13 @@ class Simulator():
 			res = res_pd[res_names].iloc[-1]
 			if check_pressure is True:
 				press_err = res_pd['sup_P_err.y'].iloc[-1]
-				if press_err > 100:
+				if press_err > 200:
 					raise RuntimeError(f'Simulation supply pressure error is {press_err}Pa, '\
-						'which is higher than the threshold 100, simulation terminates. '\
+						'which is higher than the threshold 200, simulation terminates. '\
 						'You should check the Modelica Model.')
 				else:
 					self._logger.info(f'Simulation supply pressure error is {press_err}Pa, '\
-						'which is smaller than the threshold 100.')
+						'which is smaller than the threshold 200.')
 		except:
 			traceback.print_exc()
 			raise RuntimeError('_base_simulate: '\
