@@ -1,10 +1,10 @@
 {
 	"params":[
 		{"dist_type": "uniform",
-		 "dist_param": {"low": 2, "high": 200}
+		 "dist_param": {"low": 100, "high": 1000}
 		},
 		{"dist_type": "uniform",
-		 "dist_param": {"low": 0.5, "high": 5}
+		 "dist_param": {"low": 10000, "high": 300000}
 		}
 	] 
 }

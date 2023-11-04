@@ -8,7 +8,7 @@ param_json_path = 'calibration_param_dist_exp_4.json'# 'calibration_param_dist_e
 sudo_pwd = '123456'
 log_level = 'DEBUG'
 search_fail_return = True
-calibration_data = pd.read_csv('2020P2_calibration_data_30m.csv')
+calibration_data = pd.read_csv('2020P2_calibration_data_30m_qthres0.9_bins30.csv')
 tgt_sup_pre = None
 simulator = Simulator(mo_path=mo_path, res_dir=None, 
 				sudo_pwd=sudo_pwd, log_level=log_level,
@@ -17,8 +17,8 @@ simulator = Simulator(mo_path=mo_path, res_dir=None,
                       tgt_sup_pre = tgt_sup_pre, tgt_search_its = 20,
                       tgt_err_thres_perct = 1,    search_fail_return = search_fail_return
                      )
-param_names = ['parameter:Real:chiller_pipe_len',
-               'parameter:Real:chiller_v_nominal']
+param_names = ['parameter:Real:chr_flow_nom',
+               'parameter:Real:chr_dp_nom']
 
 sim_inputs = {'pump_speed_1.k': calibration_data['NB2_S_1_NYZ_cwp_9_HzSPR_x'].values/50,
 			 'pump_speed_2.k': calibration_data['NB2_S_1_NYZ_cwp_10_HzSPR_x'].values/50,
