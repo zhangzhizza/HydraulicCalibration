@@ -10,7 +10,7 @@ import json
 LOG_LEVEL = 'DEBUG';
 LOG_FMT = "[%(asctime)s] %(name)s %(levelname)s:%(message)s"
 
-run_dir = './run_1698628227.3075275'
+run_dir = './run_1699339352.8566556'
 field_data_file = './cali_field_data_down.csv'#'DEBUG_D_field_org_down (copy).csv'#
 sim_data_file = './cali_sim_data_down.csv'#'DEBUG_D_sim_org_down (copy).csv'#'
 ydim = 1

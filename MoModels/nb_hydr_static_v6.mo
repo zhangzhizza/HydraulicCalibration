@@ -44,8 +44,8 @@ model nb_hydr_static_v6
   Buildings.Fluid.Sensors.Pressure chw_term_P(redeclare package Medium = Buildings.Media.Water) "Chilled water pressure after terminal" annotation(
     Placement(transformation(extent = {{82, 152}, {102, 172}})));
 
-  parameter Real chr_flow_nom = 200 "Nominal flow rate of each chiller (kg/s)";
-  parameter Real chr_dp_nom = 200000 "Nominal Dp of each chiller (Pa)";
+  parameter Real chr_flow_nom=200 "Nominal flow rate of each chiller (kg/s)";
+  parameter Real chr_dp_nom=200000 "Nominal Dp of each chiller (Pa)";
   Modelica.Blocks.Sources.Constant pump_speed_2(k = 0.5760) "Pump speed constant" annotation(
     Placement(transformation(extent = {{-338, -280}, {-318, -260}})));
   Modelica.Blocks.Sources.Constant pump_speed_3(k = 0.5760) "Pump speed constant" annotation(

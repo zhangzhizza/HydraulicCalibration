@@ -16,7 +16,7 @@ cmbYArgs = None
 ydim = 1
 x_ranges = {2: [0, 50], 3: [0, 50], 4: [0, 50], 5: [0, 50]}
 iterations = 750
-chains = 4
+chains = 8
 
 stan_in_path = './stan_model/chong_nodelta_allUniformPrior.stan'
 stan_model_path = None

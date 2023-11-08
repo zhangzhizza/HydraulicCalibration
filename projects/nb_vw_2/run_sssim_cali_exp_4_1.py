@@ -13,7 +13,7 @@ calibration_data = pd.read_csv('2020P2_calibration_data_30m_qthres0.9_bins30.csv
 tgt_sup_pre = None
 simulator = Simulator(mo_path=mo_path, res_dir=None, 
 				sudo_pwd=sudo_pwd, log_level=log_level,
-                      step_size = 500,
+                      step_size = 1000,
                       fmu_path = None, mo_set_params = {},
                       tgt_sup_pre = tgt_sup_pre, tgt_search_its = 20,
                       tgt_err_thres_perct = 1,    search_fail_return = search_fail_return
@@ -37,4 +37,4 @@ outputs = ['chw_sup_m.m_flow', 'chw_sup_P.p', 'terminal_resist.y_actual']
 sampler = SamplesGenerator(param_json_path)
 sssim = SensitivitySimulation(sampler, simulator, param_names, res_dir,
                              sim_inputs, outputs)
-sssim.run(samples_n=300, max_workers=12, inputs_sample_n=200)
+sssim.run(samples_n=100, max_workers=12)
