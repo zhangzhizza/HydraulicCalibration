@@ -1,0 +1,8 @@
+<stan.Fit>
+Parameters:
+    theta: (2,)
+    rho_eta: (8,)
+    lambda_eta: ()
+    lambda_e: ()
+    beta_eta: (8,)
+Draws: 6000

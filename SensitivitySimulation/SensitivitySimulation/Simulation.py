@@ -84,7 +84,6 @@ class SensitivitySimulation():
 			if inputs_sample_n is not None:
 				sim_inputs_len = len(sim_inputs[list(sim_inputs.keys())[0]])
 				random_indices = random.sample(range(sim_inputs_len), inputs_sample_n)
-				#random_indices = [1393]
 				sim_inputs = {k:v[random_indices] for k, v in sim_inputs.items()}
 				
 				np.savetxt(this_res_dir + os.sep + 'random_indices.csv', 

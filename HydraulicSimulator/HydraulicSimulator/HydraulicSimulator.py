@@ -106,7 +106,7 @@ class Simulator():
 					fmu_path = fmu_path)
 		return mo_engine
 
-	def simulate(self, inputs, output_names, threads_n = None):
+	def simulate(self, inputs, output_names, threads_n = None, check_pressure = True):
 		"""
 		Args:
 		----------
@@ -200,7 +200,7 @@ class Simulator():
 								final_time = self._step_size,
 								set_param_dict = input_dict_i,
 								res_names = output_names,
-								check_pressure = True)
+								check_pressure = check_pressure)
 					time.sleep(1)
 					jobs.append(job_i)
 				else:
@@ -210,7 +210,7 @@ class Simulator():
 								final_time = self._step_size,
 								set_param_dict = input_dict_i,
 								res_names = output_names,
-								check_pressure = True)
+								check_pressure = check_pressure)
 					sim_res_ls.append(sim_res_i)
 			if threads_n is not None and type(threads_n) is int:
 				wait(jobs)
