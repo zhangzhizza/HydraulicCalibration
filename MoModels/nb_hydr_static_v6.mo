@@ -74,7 +74,7 @@ model nb_hydr_static_v6
   Modelica.Blocks.Sources.Constant val_pos_4(k = 1) "Valve position constant" annotation(
     Placement(transformation(extent = {{-210, -312}, {-190, -292}})));
 
-  Buildings.Controls.Continuous.LimPID conPID(Ti = 25, controllerType = Modelica.Blocks.Types.SimpleController.PI, k = 0.000005, reverseActing = false, yMax = 1, yMin = 0.05, y_start = 1) annotation(
+  Buildings.Controls.Continuous.LimPID conPID(Ti = 25, controllerType = Modelica.Blocks.Types.SimpleController.PI, k = 0.000005, reverseActing = false, yMax = 1, yMin = 0.01, y_start = 1) annotation(
     Placement(transformation(extent = {{8, 176}, {28, 196}})));
   Modelica.Blocks.Sources.Constant chw_sup_PSP(k = 500066.6667) "Supply chilled water pressure setpoint" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 0, origin = {-50, 180})));
