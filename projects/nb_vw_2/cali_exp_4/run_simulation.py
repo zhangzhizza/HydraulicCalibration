@@ -41,7 +41,7 @@ sim_inputs_cali = {'pump_speed_1.k': input_cali_data['NB2_S_1_NYZ_cwp_9_HzSPR_x'
              'val_pos_3.k': input_cali_data['cwp_11_val_pos'],
              'val_pos_4.k': input_cali_data['cwp_12_val_pos'],
              'ret_p.k': input_cali_data['NB2_S_1_NYZ_sys_x_PcwIn_x'].values,
-              'chw_sup_PSP.p': input_cali_data['NB2_S_1_NYZ_sys_x_PcwOut_x'].values
+              'chw_sup_PSP.k': input_cali_data['NB2_S_1_NYZ_sys_x_PcwOut_x'].values
 			}
 sim_inputs_test = {'pump_speed_1.k': input_test_data['NB2_S_1_NYZ_cwp_9_HzSPR_x'].values/50,
 			 'pump_speed_2.k': input_test_data['NB2_S_1_NYZ_cwp_10_HzSPR_x'].values/50,
@@ -52,9 +52,9 @@ sim_inputs_test = {'pump_speed_1.k': input_test_data['NB2_S_1_NYZ_cwp_9_HzSPR_x'
              'val_pos_3.k': input_test_data['cwp_11_val_pos'],
              'val_pos_4.k': input_test_data['cwp_12_val_pos'],
              'ret_p.k': input_test_data['NB2_S_1_NYZ_sys_x_PcwIn_x'].values,
-              'chw_sup_PSP.p': input_test_data['NB2_S_1_NYZ_sys_x_PcwOut_x'].values
+              'chw_sup_PSP.k': input_test_data['NB2_S_1_NYZ_sys_x_PcwOut_x'].values
 			}
-outputs = ['chw_sup_m.m_flow', 'chw_sup_P.p', 'terminal_resist.y_actual']
+outputs = ['chw_sup_m.m_flow', 'chw_sup_P.k', 'terminal_resist.y_actual']
 time_s = time.time()
 sim_res_cali = simulator.simulate(inputs=sim_inputs_cali, output_names=outputs, threads_n = 1, check_pressure = False)
 sim_res_test = simulator.simulate(inputs=sim_inputs_test, output_names=outputs, threads_n = 1, check_pressure = False)
