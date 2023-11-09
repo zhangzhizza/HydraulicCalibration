@@ -54,7 +54,7 @@ parameter Real chr_dp_nom=298354.9367330719 "Nominal Dp of each chiller (Pa)";
   Modelica.Blocks.Sources.Constant ret_p(k = 334548) "Return water pressure" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 180, origin = {202, 102})));
 
-  Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 10000, m_flow_nominal = 1200) annotation(
+  Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 50000, m_flow_nominal = 1200) annotation(
     Placement(transformation(extent = {{32, 128}, {52, 148}})));
   Modelica.Fluid.Valves.ValveIncompressible checkvalve_1(CvData = Modelica.Fluid.Types.CvTypes.OpPoint,redeclare package Medium = Buildings.Media.Water, checkValve = true, dp_nominal(displayUnit = "Pa") = 10000, m_flow_nominal = chr_flow_nom) annotation(
     Placement(transformation(extent = {{-116, 50}, {-136, 70}})));
