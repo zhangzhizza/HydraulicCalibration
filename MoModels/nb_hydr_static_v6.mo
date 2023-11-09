@@ -52,7 +52,7 @@ model nb_hydr_static_v6
     Placement(transformation(extent = {{-340, -318}, {-320, -298}})));
   Modelica.Blocks.Sources.Constant pump_speed_4(k = 0.5760) "Pump speed constant" annotation(
     Placement(transformation(extent = {{-296, -324}, {-276, -304}})));
-  Modelica.Blocks.Sources.Constant ret_p(k = 334548) "Return water pressure" annotation(
+  Modelica.Blocks.Sources.Constant ret_p(k = 386198.3333) "Return water pressure" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 180, origin = {202, 102})));
 
   Buildings.Fluid.Actuators.Valves.TwoWayLinear terminal_resist(redeclare package Medium = Buildings.Media.Water, dpFixed_nominal = 0, dpValve_nominal = 10000, m_flow_nominal = 1200) annotation(
@@ -76,7 +76,7 @@ model nb_hydr_static_v6
 
   Buildings.Controls.Continuous.LimPID conPID(Ti = 25, controllerType = Modelica.Blocks.Types.SimpleController.PI, k = 0.000005, reverseActing = false, yMax = 1, yMin = 0.01, y_start = 1) annotation(
     Placement(transformation(extent = {{8, 176}, {28, 196}})));
-  Modelica.Blocks.Sources.Constant chw_sup_PSP(k = 453433) "Supply chilled water pressure setpoint" annotation(
+  Modelica.Blocks.Sources.Constant chw_sup_PSP(k = 500066.6667) "Supply chilled water pressure setpoint" annotation(
     Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 0, origin = {-50, 180})));
   Modelica.Blocks.Math.Add difference(k2 = -1) annotation(
     Placement(visible = true, transformation(origin = {68, 184}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
