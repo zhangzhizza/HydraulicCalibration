@@ -165,7 +165,7 @@ class Simulator():
 							iteration = tgt_search_its,
 							err_thres_percent = tgt_err_thres_perct,
 							search_fail_return = search_fail_return)
-					time.sleep(1)
+					time.sleep(0.1)
 					jobs.append(job_i)
 				else:
 					sim_res_i = self._search_simulate(
@@ -186,8 +186,12 @@ class Simulator():
 				wait(jobs)
 		else:
 			for i in range(all_input_vals.shape[0]):
-				self._logger.info('=======Simulation Iteration: {} '\
-									'======='.format(i))
+				self._logger.info('===================================================================')
+				self._logger.info('======================Simulation Iteration: {} '\
+									'======================'.format(i))
+				self._logger.info('===================================================================')
+				print('======================Simulation Iteration: {} '\
+									'======================'.format(i))
 				input_val_i = all_input_vals[i]
 				if np.isnan(input_val_i).sum() > 0:
 					continue
@@ -201,7 +205,7 @@ class Simulator():
 								set_param_dict = input_dict_i,
 								res_names = output_names,
 								check_pressure = check_pressure)
-					time.sleep(1)
+					time.sleep(0.1)
 					jobs.append(job_i)
 				else:
 					sim_res_i = self._base_simulate(
@@ -326,6 +330,7 @@ class Simulator():
 						set_param_dict, res_names, 
 						check_pressure = False,
 						debug = False):
+		self._logger.info('base_simulate starting....')
 		res_names_effective = copy.deepcopy(res_names)
 		if check_pressure is True:
 			res_names_effective.append('sup_P_err.y')
