@@ -8,8 +8,8 @@ import json
 res_dir = './run_1699339352.8566556'
 res_type = 'testing'
 base_mo_file_path = '../../../MoModels/nb_hydr_static_v6.mo'
-input_cali_data = pd.read_csv('../2020P2_calibration_data_30m.csv')
-input_test_data = pd.read_csv('../2021P2_calibration_data_30m.csv')
+input_cali_data = pd.read_csv('../2020P2_calibration_data_60m.csv')
+input_test_data = pd.read_csv('../2021P2_calibration_data_60m.csv')
 param_names = ['parameter:Real:chr_flow_nom',
                'parameter:Real:chr_dp_nom']
 
@@ -63,4 +63,5 @@ sim_res_test = simulator.simulate(inputs=sim_inputs_test, output_names=outputs, 
 np.savetxt(res_dir + os.sep + 'sim_res_test.csv', 
             sim_res_test, delimiter = ',')
 print('Running time: {}s'.format(time.time() - time_s))
+
 
