@@ -56,10 +56,10 @@ sim_inputs_test = {'pump_speed_1.k': input_test_data['NB2_S_1_NYZ_cwp_9_HzSPR_x'
 			}
 outputs = ['chw_sup_m.m_flow', 'chw_sup_P.p', 'terminal_resist.y_actual']
 time_s = time.time()
-sim_res_cali = simulator.simulate(inputs=sim_inputs_cali, output_names=outputs, threads_n = 20, check_pressure = False)
+sim_res_cali = simulator.simulate(inputs=sim_inputs_cali, output_names=outputs, threads_n = 50, check_pressure = False)
 np.savetxt(res_dir + os.sep + 'sim_res_cali.csv', 
             sim_res_cali, delimiter = ',')
-sim_res_test = simulator.simulate(inputs=sim_inputs_test, output_names=outputs, threads_n = 20, check_pressure = False)
+sim_res_test = simulator.simulate(inputs=sim_inputs_test, output_names=outputs, threads_n = 50, check_pressure = False)
 np.savetxt(res_dir + os.sep + 'sim_res_test.csv', 
             sim_res_test, delimiter = ',')
 print('Running time: {}s'.format(time.time() - time_s))
