@@ -1,0 +1,10 @@
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        1.6951652257327205E-03</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        6.5945267190926173E-06</value>, <value name="scaledStepLength">        7.3272533549310503E-06</value>, <value name="tolerance">        1.0000000000000002E-06</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
+FMIL: module = Model, log level = 2: [INFO][FMU status:Error]   <KinsolError category="error">
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     Error occured in <value name="function">KINSol</value> at <value name="t">        1.6951652257327205E-03</value> when solving <value name="block">"1"</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="msg">"The line search algorithm was unable to find an iterate sufficiently distinct from the current iterate."</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]     <value name="functionL2Norm">        6.5882236391763918E-06</value>, <value name="scaledStepLength">        7.3202499314197808E-06</value>, <value name="tolerance">        1.0000000000000002E-06</value>
+FMIL: module = Model, log level = 2: [ERROR][FMU status:Error]   </KinsolError>
